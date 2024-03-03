@@ -1,0 +1,78 @@
+package com.bej.product.domain;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.List;
+
+@Document
+public class User {
+    @Id
+    private String userId;
+    private String password;
+    private String userName;
+    private String userEmail;
+    private List<Product> productList;
+
+    public User() {
+    }
+
+    public User(String userId, String password, String userName, String userEmail, List<Product> productList) {
+        this.userId = userId;
+        this.password = password;
+        this.userName = userName;
+        this.userEmail = userEmail;
+        this.productList = productList;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
+    public List<Product> getProductList() {
+        return productList;
+    }
+
+    public void setProductList(List<Product> productList) {
+        this.productList = productList;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", password=" + password +
+                ", userName='" + userName + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", productList=" + productList +
+                '}';
+    }
+}
