@@ -1,1 +1,3 @@
 # Java-rabbitMq-example
+
+RabbitMQ is a messaging broker implemented in Erlang and provides a robust and flexible platform for building distributed systems. In Java, RabbitMQ is commonly used to facilitate communication between components in a scalable and reliable manner. Developers can interact with RabbitMQ using the Java RabbitMQ client library, allowing for the creation, publishing, and consumption of messages in a message-oriented middleware architecture. The library supports various messaging patterns, including publish-subscribe and point-to-point, making it a popular choice for building decoupled and scalable systems in Java applications.
